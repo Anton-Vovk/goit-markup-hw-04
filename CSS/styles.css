@@ -160,6 +160,30 @@ img {
   display: flex;
 }
 
+.advantage-list-item::before {
+  content: '';
+  display: block;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.advantage-list-item:nth-child(1)::before {
+  background-image: url(../images/advantage/antena.png);
+}
+.advantage-list-item:nth-child(2)::before {
+  background-image: url(../images/advantage/clock.png);
+}
+.advantage-list-item:nth-child(3)::before {
+  background-image: url(../images/advantage/pc.png);
+}
+.advantage-list-item:nth-child(4)::before {
+  background-image: url(../images/advantage/astronaut.png);
+}
+
 .advantage-list li {
   /* justify-content: space-between; */
   flex-basis: 270px;
@@ -181,7 +205,7 @@ img {
 .advantage-description {
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.1714;
+  line-height: 1.72;
   letter-spacing: 0.03em;
   color: var(--discription-color);
 }
@@ -223,6 +247,12 @@ img {
 .team-list {
   display: flex;
 }
+.team-list-item {
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
 
 .team-list-item:not(:last-child) {
   margin-right: 30px;
@@ -259,8 +289,55 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--discription-color);
+  margin-bottom: 16px;
 }
+
+.social-list {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 14px;
+}
+
+.social-list-link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-list-link:hover {
+  background-color: var(--accent-color);
+}
+
+.social-list-svg {
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
+}
+.social-list-link:hover .social-list-svg {
+  fill: #fff;
+}
+
 /*  ============ END TEAM  ============ */
+
+/*  ============ CLIENTS  ============ */
+
+/*  ============ END CLIENTS  ============ */
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.clients-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.167;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-color);
+}
 
 /*  ============  FOOTER  ============ */
 .footer {
