@@ -24,10 +24,12 @@
           >
           <ul class="nav-list list">
             <li class="nav-list-item">
-              <a class="nav-list-link link" href="./index.html">Студия</a>
+              <a class="nav-list-link link active" href="./index.html"
+                >Студия</a
+              >
             </li>
             <li class="nav-list-item">
-              <a class="nav-list-link link active" href="./portfolio.html"
+              <a class="nav-list-link link" href="./portfolio.html"
                 >Портфолио</a
               >
             </li>
@@ -40,12 +42,18 @@
           <ul class="address-list-header list">
             <li class="address-list-item">
               <a class="address-link-mail link" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
+                ><svg class="letter-svg">
+                  <use href="./images/sprite.svg#letter"></use>
+                </svg>
+                info@devstudio.com</a
               >
             </li>
             <li class="address-list-item">
               <a class="address-link-tel link" href="tel:+380961111111"
-                >+38 096 111 11 11</a
+                ><svg class="phone-svg">
+                  <use href="./images/sprite.svg#phone"></use>
+                </svg>
+                +38 096 111 11 11</a
               >
             </li>
           </ul>
@@ -99,7 +107,7 @@
                 />
                 <div class="potfolio-content">
                   <h2 class="portfolio-title">
-                    Постер <span lang="en">Orlean vs Golden Star</span>
+                    Постер <span lang="en">New Orlean vs Golden Star</span>
                   </h2>
                   <p class="portfolio-category">Дизайн</p>
                 </div>
@@ -223,33 +231,70 @@
     <!-- FOOTER -->
     <footer class="footer">
       <div class="container">
-        <a class="logo-footer link" href="./index.html" lang="en"
-          ><span class="first-word-logo">Web</span>Studio</a
-        >
-        <address class="address">
-          <ul class="address-list-footer list">
-            <li class="address-list-item">
-              <a
-                class="adreess-link-maps-foot link"
-                href="https://goo.gl/maps/HmVPbDxhy2ioRLZ18"
-                target="_blank"
-                >г. Киев, пр-т Леси Украинки, 26</a
-              >
-            </li>
-            <li>
-              <a
-                class="adreess-link-mail-foot link"
-                href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li class="address-list-item">
-              <a class="adreess-link-tel-foot link" href="tel:+380961111111"
-                >+38 096 111 11 11</a
-              >
-            </li>
-          </ul>
-        </address>
+        <ul class="footer-list list">
+          <li class="footer-left-side">
+            <a class="logo-footer link" href="./index.html" lang="en"
+              ><span class="first-word-logo">Web</span>Studio</a
+            >
+            <address class="address">
+              <ul class="address-list-footer list">
+                <li class="address-list-item">
+                  <a
+                    class="adreess-link-maps-foot link"
+                    href="https://goo.gl/maps/HmVPbDxhy2ioRLZ18"
+                    target="_blank"
+                    >г. Киев, пр-т Леси Украинки, 26</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="adreess-link-mail-foot link"
+                    href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li class="address-list-item">
+                  <a class="adreess-link-tel-foot link" href="tel:+380961111111"
+                    >+38 096 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </li>
+          <li class="footer-social-side">
+            <h3 class="footer-social-side-title">присоединяйтесь</h3>
+            <ul class="social-list list">
+              <li class="social-list-item">
+                <a class="social-list-link" href="">
+                  <svg class="social-list-svg">
+                    <use href="./images/sprite.svg#instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-list-item">
+                <a class="social-list-link" href="">
+                  <svg class="social-list-svg">
+                    <use href="./images/sprite.svg#twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-list-item">
+                <a class="social-list-link" href="">
+                  <svg class="social-list-svg">
+                    <use href="./images/sprite.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-list-item">
+                <a class="social-list-link" href="">
+                  <svg class="social-list-svg">
+                    <use href="./images/sprite.svg#linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
       </div>
     </footer>
   </body>

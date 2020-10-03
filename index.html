@@ -42,12 +42,18 @@
           <ul class="address-list-header list">
             <li class="address-list-item">
               <a class="address-link-mail link" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
+                ><svg class="letter-svg">
+                  <use href="./images/sprite.svg#letter"></use>
+                </svg>
+                info@devstudio.com</a
               >
             </li>
             <li class="address-list-item">
               <a class="address-link-tel link" href="tel:+380961111111"
-                >+38 096 111 11 11</a
+                ><svg class="phone-svg">
+                  <use href="./images/sprite.svg#phone"></use>
+                </svg>
+                +38 096 111 11 11</a
               >
             </li>
           </ul>
@@ -109,7 +115,7 @@
             <li class="about-list-item">
               <img
                 class="about-list-img"
-                src="./images/work/work-process-1.svg"
+                src="./images/work/work-process-1.jpg"
                 alt="мужчина программирует за компьютером"
                 width="370"
                 height="294"
@@ -118,7 +124,7 @@
             <li class="about-list-item">
               <img
                 class="about-list-img"
-                src="./images/work/work-process-2.svg"
+                src="./images/work/work-process-2.jpg"
                 alt="девушка смотрит на телефон перед ноутбуком"
                 width="370"
                 height="294"
@@ -127,7 +133,7 @@
             <li class="about-list-item">
               <img
                 class="about-list-img"
-                src="./images/work/work-process-3.svg"
+                src="./images/work/work-process-3.jpg"
                 alt="человек работает с планшетом над проектом"
                 width="370"
                 height="294"
@@ -144,7 +150,7 @@
             <li class="team-list-item">
               <img
                 class="team-list-img"
-                src="./images/team/igor.svg"
+                src="./images/team/igor.jpg"
                 alt="фотография Игоря Демьяненка"
                 width="270"
                 height="260"
@@ -185,7 +191,7 @@
             <li class="team-list-item">
               <img
                 class="team-list-img"
-                src="./images/team/olga.svg"
+                src="./images/team/olga.jpg"
                 alt="фотография Ольги Репины "
                 width="270"
                 height="260"
@@ -226,7 +232,7 @@
             <li class="team-list-item">
               <img
                 class="team-list-img"
-                src="./images/team/nikolay.svg"
+                src="./images/team/nikolay.jpg"
                 alt="фотография Николая Тарасова"
                 width="270"
                 height="260"
@@ -267,7 +273,7 @@
             <li class="team-list-item">
               <img
                 class="team-list-img"
-                src="./images/team/mikhail.svg"
+                src="./images/team/mikhail.jpg"
                 alt="фотография Михаила Ермакова"
                 width="270"
                 height="260"
@@ -313,12 +319,48 @@
         <div class="container">
           <h2 class="clients-title">Постоянные клиенты</h2>
           <ul class="clients-list list">
-            <li class="clients-list-item"></li>
-            <li class="clients-list-item"></li>
-            <li class="clients-list-item"></li>
-            <li class="clients-list-item"></li>
-            <li class="clients-list-item"></li>
-            <li class="clients-list-item"></li>
+            <li class="clients-list-item">
+              <a class="clients-link" href="">
+                <svg class="cliens-logo-svg" width="44" height="50">
+                  <use href="./images/sprite.svg#logo-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="clients-list-item">
+              <a class="clients-link" href="">
+                <svg class="cliens-logo-svg" width="40" height="52">
+                  <use href="./images/sprite.svg#logo-2"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="clients-list-item">
+              <a class="clients-link" href="">
+                <svg class="cliens-logo-svg" width="41" height="43">
+                  <use href="./images/sprite.svg#logo-3"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="clients-list-item">
+              <a class="clients-link" href="">
+                <svg class="cliens-logo-svg" width="80" height="42">
+                  <use href="./images/sprite.svg#logo-4"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="clients-list-item">
+              <a class="clients-link" href="">
+                <svg class="cliens-logo-svg" width="59" height="47">
+                  <use href="./images/sprite.svg#logo-5"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="clients-list-item">
+              <a class="clients-link" href="">
+                <svg class="cliens-logo-svg" width="88" height="45">
+                  <use href="./images/sprite.svg#logo-6"></use>
+                </svg>
+              </a>
+            </li>
           </ul>
         </div>
       </section>
@@ -326,33 +368,70 @@
     <!-- FOOTER -->
     <footer class="footer">
       <div class="container">
-        <a class="logo-footer link" href="./index.html" lang="en"
-          ><span class="first-word-logo">Web</span>Studio</a
-        >
-        <address class="address">
-          <ul class="address-list-footer list">
-            <li class="address-list-item">
-              <a
-                class="adreess-link-maps-foot link"
-                href="https://goo.gl/maps/HmVPbDxhy2ioRLZ18"
-                target="_blank"
-                >г. Киев, пр-т Леси Украинки, 26</a
-              >
-            </li>
-            <li>
-              <a
-                class="adreess-link-mail-foot link"
-                href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li class="address-list-item">
-              <a class="adreess-link-tel-foot link" href="tel:+380961111111"
-                >+38 096 111 11 11</a
-              >
-            </li>
-          </ul>
-        </address>
+        <ul class="footer-list list">
+          <li class="footer-left-side">
+            <a class="logo-footer link" href="./index.html" lang="en"
+              ><span class="first-word-logo">Web</span>Studio</a
+            >
+            <address class="address">
+              <ul class="address-list-footer list">
+                <li class="address-list-item">
+                  <a
+                    class="adreess-link-maps-foot link"
+                    href="https://goo.gl/maps/HmVPbDxhy2ioRLZ18"
+                    target="_blank"
+                    >г. Киев, пр-т Леси Украинки, 26</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="adreess-link-mail-foot link"
+                    href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li class="address-list-item">
+                  <a class="adreess-link-tel-foot link" href="tel:+380961111111"
+                    >+38 096 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </li>
+          <li class="footer-social-side">
+            <h3 class="footer-social-side-title">присоединяйтесь</h3>
+            <ul class="social-list list">
+              <li class="social-list-item">
+                <a class="social-list-link" href="">
+                  <svg class="social-list-svg">
+                    <use href="./images/sprite.svg#instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-list-item">
+                <a class="social-list-link" href="">
+                  <svg class="social-list-svg">
+                    <use href="./images/sprite.svg#twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-list-item">
+                <a class="social-list-link" href="">
+                  <svg class="social-list-svg">
+                    <use href="./images/sprite.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-list-item">
+                <a class="social-list-link" href="">
+                  <svg class="social-list-svg">
+                    <use href="./images/sprite.svg#linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
       </div>
     </footer>
   </body>

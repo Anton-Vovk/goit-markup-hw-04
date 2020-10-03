@@ -88,7 +88,7 @@ img {
   display: flex;
 }
 .address-list-item:not(:last-child) {
-  margin-right: 50px;
+  margin-right: 30px;
 }
 
 .address-link-mail,
@@ -100,6 +100,21 @@ img {
   line-height: 1.142;
   letter-spacing: 0.02em;
   color: var(--discription-color);
+  display: flex;
+  align-items: center;
+}
+
+.letter-svg {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: currentColor;
+}
+.phone-svg {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  fill: currentColor;
 }
 
 .nav-list-link:hover,
@@ -123,6 +138,12 @@ img {
   padding-top: 200px;
   padding-bottom: 200px;
   background-color: #2f303a;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero/bg.jpg);
+  background-position: center;
 }
 
 .hero-title {
@@ -294,8 +315,8 @@ img {
 
 .social-list {
   display: flex;
-  justify-content: space-around;
-  padding-bottom: 14px;
+  justify-content: center;
+  padding-bottom: 30px;
 }
 
 .social-list-link {
@@ -306,7 +327,9 @@ img {
   align-items: center;
   justify-content: center;
 }
-
+.social-list-item:not(:last-child) {
+  margin-right: 10px;
+}
 .social-list-link:hover {
   background-color: var(--accent-color);
 }
@@ -324,7 +347,6 @@ img {
 
 /*  ============ CLIENTS  ============ */
 
-/*  ============ END CLIENTS  ============ */
 .clients {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -337,7 +359,38 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-color);
+  margin-bottom: 50px;
 }
+
+.clients-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.clients-list {
+  display: flex;
+}
+
+.clients-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  color: #afb1b8;
+}
+
+.cliens-logo-svg {
+  fill: currentColor;
+}
+
+.clients-link:hover {
+  border: 1px solid var(--accent-color);
+  color: var(--accent-color);
+}
+
+/*  ============ END CLIENTS  ============ */
 
 /*  ============  FOOTER  ============ */
 .footer {
@@ -380,6 +433,40 @@ img {
 .address-list-footer li:not(:last-child) {
   margin-bottom: 8px;
   margin-right: 0px;
+}
+
+.footer-social-side-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.142;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.footer-social-side {
+  margin-top: 12px;
+}
+
+.footer-list {
+  display: flex;
+}
+
+.footer-left-side {
+  margin-right: 70px;
+}
+
+.footer-social-side .social-list-link {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.footer-social-side .social-list-svg {
+  fill: #ffffff;
+}
+
+.footer-social-side .social-list-link:hover {
+  background: var(--accent-color);
 }
 
 /*  ============  END FOOTER  ============ */
@@ -425,6 +512,7 @@ img {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   color: #ffffff;
+  cursor: pointer;
 }
 
 .portfolio-title {
@@ -450,6 +538,11 @@ img {
 .portfolio-list li {
   margin-right: 30px;
   margin-bottom: 30px;
+}
+
+.portfolio-item:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio-item:nth-child(3n) {
